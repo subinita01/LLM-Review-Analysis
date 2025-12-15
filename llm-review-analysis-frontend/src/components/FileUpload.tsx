@@ -58,11 +58,7 @@ export const FileUpload = ({ onUploadSuccess }: FileUploadProps) => {
     formData.append("file", file);
 
     try {
-      const response = await axios.post(
-        "http://localhost:8080/api/reviews/upload",
-        formData
-      );
-
+      const response = await axios.post('https://llm-review-analysis.onrender.com/api/reviews/upload', formData);
       setUploadStatus("success");
       setTimeout(() => {
         onUploadSuccess(response.data.batchId);
