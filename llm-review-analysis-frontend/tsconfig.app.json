@@ -1,0 +1,47 @@
+{{
+  "compilerOptions": {
+    /* ------------------------------------------
+       MODERN TARGET + MOST OPTIMAL TS SETUP
+    ------------------------------------------ */
+    "target": "ES2020",
+    "lib": ["ES2021", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+
+    /* ------------------------------------------
+       REACT + VITE COMPATIBILITY
+    ------------------------------------------ */
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "useDefineForClassFields": true,
+    "allowJs": false,
+    "noEmit": true,
+
+    /* ------------------------------------------
+       STRICTNESS (Balanced)
+       Avoids annoying errors but still safe
+    ------------------------------------------ */
+    "strict": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": false,
+
+    /* ------------------------------------------
+       PATH ALIASES
+    ------------------------------------------ */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+
+  /* ------------------------------------------
+     INCLUDED FILES
+  ------------------------------------------ */
+  "include": ["src", "vite-env.d.ts"]
+}
