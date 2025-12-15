@@ -54,8 +54,8 @@ export const Dashboard = ({ batchId, onReset }: DashboardProps) => {
   const fetchData = async () => {
     try {
       const [statsRes, reviewsRes] = await Promise.all([
-        axios.get('https://llm-review-analysis.onrender.com/api/dashboard/${batchId}/stats'),
-        axios.get('https://llm-review-analysis.onrender.com/api/dashboard/${batchId}/reviews'),
+        axios.get(`https://llm-review-analysis.onrender.com/api/dashboard/${batchId}/stats`),
+        axios.get(`https://llm-review-analysis.onrender.com/api/dashboard/${batchId}/reviews`),
       ]);
 
       setReviews(reviewsRes.data || []);
