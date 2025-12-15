@@ -17,6 +17,14 @@ The **Product Review Sentiment & Summary Dashboard** is a full-stack analytical 
 Instead of manually reading thousands of rows of CSV data, this system ingests raw review files, processes them using **Large Language Models (LLMs)** in parallel, and visualizes the results on a modern, glassmorphic dashboard. It identifies recurring themes (Pros/Cons), calculates sentiment trends, and generates executive summaries automatically.
 
 ---
+## 🌐 Live Demo
+
+**[View Live Application](https://llm-review-analysis-dashboard1.vercel.app/)**
+
+- **Frontend:** Deployed on Vercel
+- **Backend:** Deployed on Render
+
+**📥 Sample Data:** Download the [sample CSV file](https://drive.google.com/file/d/1ZoxhORw3JhFxKHPIYcns2rW99YNfDXZo/view?usp=sharing) to test the application with pre-formatted data.
 
 ## ✨ Key Features
 
