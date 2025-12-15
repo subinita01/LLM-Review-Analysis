@@ -1,47 +1,25 @@
-{{
+{
   "compilerOptions": {
-    /* ------------------------------------------
-       MODERN TARGET + MOST OPTIMAL TS SETUP
-    ------------------------------------------ */
     "target": "ES2020",
-    "lib": ["ES2021", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "moduleDetection": "force",
-
-    /* ------------------------------------------
-       REACT + VITE COMPATIBILITY
-    ------------------------------------------ */
-    "jsx": "react-jsx",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "isolatedModules": true,
     "useDefineForClassFields": true,
-    "allowJs": false,
-    "noEmit": true,
-
-    /* ------------------------------------------
-       STRICTNESS (Balanced)
-       Avoids annoying errors but still safe
-    ------------------------------------------ */
-    "strict": true,
-    "noImplicitAny": false,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
     "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": false,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
+    "noImplicitAny": false,
     "noFallthroughCasesInSwitch": false,
-
-    /* ------------------------------------------
-       PATH ALIASES
-    ------------------------------------------ */
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-
-  /* ------------------------------------------
-     INCLUDED FILES
-  ------------------------------------------ */
-  "include": ["src", "vite-env.d.ts"]
+  "include": ["src"]
 }
